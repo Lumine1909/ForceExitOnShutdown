@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "io.github.lumine1909.feos.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "server": [
+    "DedicatedServerMixin"
+  ],
+  "client": [
+    "MinecraftMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

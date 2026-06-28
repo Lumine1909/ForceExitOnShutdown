@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "forceexitonshutdown",
+  "version": "${version}",
+
+  "name": "ForceExitOnShutdown",
+  "description": "Fix minecraft crash on shutdown due to watchdog killing non-daemon thread by adding System.exit(0)",
+  "authors": ["Lumine1909"],
+  "contact": {
+    "sources": "https://github.com/Lumine1909/ForceExitOnShutdown"
+  },
+  "license": "GPLv3",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "io.github.lumine1909.feos.ForceExitOnShutdown"
+    ]
+  },
+  "mixins": [
+    "forceexitonshutdown.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.5",
+    "minecraft": ">=26.2"
+  }
+}
